@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+
+parser = argparse.ArgumentParser(prog=':)')
+args = parser.parse_args()
+if os.geteuid() != 0:
+   print('Please run this script again with root.')
+else:
+   import sw
