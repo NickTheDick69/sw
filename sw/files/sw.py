@@ -9,7 +9,7 @@ if os.path.isfile("sw.png"):
 
 else:
     import requests
-    file_url = "https://raw.githubusercontent.com/NickTheDick69/sw/main/sw.png"
+    file_url = "https://raw.githubusercontent.com/NickTheDick69/python1/main/sw.png"
     r = requests.get(file_url)
     with open("sw.png", "wb") as f:
         f.write(r.content)
