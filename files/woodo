@@ -3,7 +3,8 @@
 import argparse
 import os
 
-parser = argparse.ArgumentParser(prog=':)')
+parser = argparse.ArgumentParser(prog='woodo')
+parser = argparse.ArgumentParser(description='Must be run with elevated privileges.')
 args = parser.parse_args()
 if os.geteuid() != 0:
    print('Please run this script again with root.')
